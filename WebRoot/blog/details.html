@@ -1,0 +1,20 @@
+<#include "/common/_layout.html" /> 
+<@layout>
+<h1>Blog管理 ---&gt; 修改Blog</h1>
+<div class="form_box">
+	<form action="/blog/back/${pageNo}" method="post">
+		<fieldset class="solid">
+			<legend>Blog details</legend>
+			<div>
+				<label>标题</label> ${blog.title}
+			</div>
+			<div>
+				<label>内容</label> ${blog.content}
+			</div>
+			<div>
+				<label>&nbsp;</label> <input value="返回" type="submit">
+			</div>
+		</fieldset>
+	</form>
+</div>
+</@layout>
